@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scheduler.ReportsController">
+   <children>
+      <RadioButton fx:id="typeradio" layoutX="151.0" layoutY="96.0" mnemonicParsing="false" text="Type" />
+      <Label fx:id="tcalabel" layoutX="161.0" layoutY="55.0" prefHeight="17.0" prefWidth="186.0" text="Total Patient Appointments" />
+      <RadioButton fx:id="monthradio" layoutX="276.0" layoutY="96.0" mnemonicParsing="false" text="Month" />
+      <Button fx:id="processbuttontca" layoutX="198.0" layoutY="127.0" mnemonicParsing="false" onAction="#onActionprocess" text="Process" />
+      <Label fx:id="schedbycontidlabel" layoutX="46.0" layoutY="221.0" text="Appointments by Contact ID" />
+      <ComboBox fx:id="comboboxscid" layoutX="60.0" layoutY="246.0" prefWidth="150.0" />
+      <Button fx:id="processbuttoncid" layoutX="109.0" layoutY="285.0" mnemonicParsing="false" onAction="#onActiongenerate" text="Process" />
+      <Label fx:id="totnumappcustidlabel" layoutX="295.0" layoutY="221.0" text="Total Number of Appointments by Patient ID " />
+      <ComboBox fx:id="comboboxtotnumcid" layoutX="348.0" layoutY="246.0" prefWidth="150.0" />
+      <Button fx:id="procbuttontotnumcid" layoutX="403.0" layoutY="285.0" mnemonicParsing="false" onAction="#onActionFetch" text="Process" />
+      <Button fx:id="mainmenubutton" layoutX="498.0" layoutY="14.0" mnemonicParsing="false" onAction="#returnmain" text="Home" />
+   </children>
+</AnchorPane>

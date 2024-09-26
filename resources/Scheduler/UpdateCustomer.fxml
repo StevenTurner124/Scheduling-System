@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scheduler.UpdateCustomerController">
+    <children>
+        <TextField fx:id="nametf" layoutX="83.0" layoutY="76.0" />
+        <TextField fx:id="addtf" layoutX="83.0" layoutY="111.0" />
+        <TextField fx:id="posttf" layoutX="334.0" layoutY="111.0" />
+        <TextField fx:id="phonetf" layoutX="334.0" layoutY="76.0" />
+        <Label fx:id="namelabel" layoutX="14.0" layoutY="80.0" text="Name" />
+        <Label fx:id="addlabel" layoutX="15.0" layoutY="115.0" text="Address" />
+        <Label fx:id="postlabel" layoutX="247.0" layoutY="115.0" text="Postal Code" />
+        <Label fx:id="phonelabel" layoutX="246.0" layoutY="80.0" text="Phone Number" />
+        <Button fx:id="submitbutton" layoutX="291.0" layoutY="250.0" mnemonicParsing="false" onAction="#onActionSubmit" text="Submit" />
+        <Button fx:id="cancelbutton" layoutX="372.0" layoutY="250.0" mnemonicParsing="false" onAction="#onActionCancel" text="Cancel" />
+        <Label fx:id="countrylabel" layoutX="15.0" layoutY="192.0" text="Country" />
+        <TextField fx:id="custidtf" editable="false" layoutX="84.0" layoutY="153.0" promptText="Auto Generated" />
+        <Label fx:id="custidlabel" layoutX="10.0" layoutY="157.0" prefHeight="17.0" prefWidth="73.0" text="Patient ID" />
+        <ComboBox fx:id="countrycombo" layoutX="83.0" layoutY="188.0" onAction="#countrySelect" prefWidth="150.0" />
+        <ComboBox fx:id="divcombo" layoutX="334.0" layoutY="188.0" prefWidth="150.0" />
+      <Label fx:id="divlabel" layoutX="272.0" layoutY="192.0" text="Division" />
+      <Label fx:id="dividlabel" layoutX="272.0" layoutY="157.0" text="Division ID" />
+      <TextField fx:id="dividtf" layoutX="334.0" layoutY="153.0" />
+      <Button fx:id="homebutton" layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#Main" text="Home" />
+        <TextField fx:id="agetf" layoutX="94.0" layoutY="220.0" />
+        <Label fx:id="agelabel" layoutX="32.0" layoutY="220.0" text="Age" />
+        <Label fx:id="viplabel" layoutX="272.0" layoutY="220.0" text="VIP" />
+        <ComboBox fx:id="vipcombo" layoutX="343.0" layoutY="220.0" prefWidth="150.0" />
+    </children>
+</AnchorPane>

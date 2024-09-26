@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="addapppane" prefHeight="512.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scheduler.UpdateAppController">
+    <children>
+        <ComboBox fx:id="contactcombo" layoutX="350.0" layoutY="138.0" prefWidth="150.0" />
+        <Label fx:id="contactlabel" layoutX="295.0" layoutY="142.0" text="Doctor" />
+        <TextField fx:id="titletext" layoutX="351.0" layoutY="67.0" />
+        <Label fx:id="descriptionlabel" layoutX="18.0" layoutY="114.0" text="Descripción" />
+        <Label fx:id="titlelabel" layoutX="307.0" layoutY="71.0" text="Título" />
+        <Label fx:id="locationlabel" layoutX="15.0" layoutY="151.0" text="Localización" />
+        <Label fx:id="typelabel" layoutX="306.0" layoutY="106.0" text="Tipo" />
+        <Label fx:id="startlabel" layoutX="15.0" layoutY="193.0" text="Inicio" />
+        <Button fx:id="confirmappbutton" layoutX="124.0" layoutY="336.0" mnemonicParsing="false" onAction="#onActionConfirm" text="Confirmar" />
+        <Button fx:id="cancelappbutton" layoutX="373.0" layoutY="336.0" mnemonicParsing="false" onAction="#onActionCancel" text="Cancelar" />
+        <DatePicker fx:id="startdatepick" layoutX="76.0" layoutY="189.0" onAction="#StartDateChosen" />
+        <Label fx:id="startlabel" layoutX="21.0" layoutY="225.0" text="Hora de&#10; comienzo" />
+        <ComboBox fx:id="endcombo" layoutX="351.0" layoutY="220.0" prefWidth="150.0" />
+        <Label fx:id="endlabel" layoutX="295.0" layoutY="224.0" text="Hora de&#10; finalización" />
+        <ComboBox fx:id="startcombo" layoutX="79.0" layoutY="229.0" prefWidth="150.0" />
+        <ComboBox fx:id="typecombo" layoutX="350.0" layoutY="102.0" prefWidth="150.0" />
+        <TextField fx:id="custtf" editable="false" layoutX="88.0" layoutY="67.0" />
+        <Label fx:id="custlabel" layoutX="22.0" layoutY="71.0" text="Paciente" />
+        <TextField fx:id="appidtf" layoutX="345.0" layoutY="267.0" />
+        <Label fx:id="appidlabel" layoutX="289.0" layoutY="271.0" text="ID de &#10;aplicación" />
+        <Label fx:id="custidlabel" layoutX="16.0" layoutY="265.0" text="Identificación del &#10;paciente" />
+        <Label fx:id="enddatelabel" layoutX="299.0" layoutY="185.0" text="Fin" />
+        <DatePicker fx:id="enddatepick" layoutX="346.0" layoutY="181.0" onAction="#EndDateChosen" />
+        <TextField fx:id="desctf" layoutX="89.0" layoutY="111.0" />
+        <TextField fx:id="locationtf" layoutX="79.0" layoutY="147.0" />
+        <Label fx:id="useridlabel" layoutX="34.0" layoutY="305.0" text="ID de &#10;usuario" />
+        <ComboBox fx:id="useridcombo" layoutX="89.0" layoutY="305.0" prefWidth="150.0" />
+        <ComboBox fx:id="custidcombo" layoutX="89.0" layoutY="267.0" onAction="#setcust" prefWidth="150.0" />
+        <Button fx:id="mainscreenbutton" layoutX="710.0" layoutY="42.0" mnemonicParsing="false" onAction="#onActionMain" text="Inicio" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="437.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scheduler.HomeScreenController">
+   <children>
+      <Button fx:id="custbutton" layoutX="240.0" layoutY="119.0" mnemonicParsing="false" onAction="#onActionCustomers" prefHeight="38.0" prefWidth="173.0" text="Patients" />
+      <Button fx:id="reportsbutton" layoutX="240.0" layoutY="181.0" mnemonicParsing="false" onAction="#onActionReports" prefHeight="38.0" prefWidth="173.0" text="Reports" />
+      <Button fx:id="appbutton" layoutX="240.0" layoutY="237.0" mnemonicParsing="false" onAction="#onActionApps" prefHeight="38.0" prefWidth="173.0" text="Appointments" />
+      <Button fx:id="logoutbutton" layoutX="521.0" layoutY="346.0" mnemonicParsing="false" onAction="#onActionLogout" prefHeight="38.0" prefWidth="87.0" text="Log Out" />
+   </children>
+</AnchorPane>

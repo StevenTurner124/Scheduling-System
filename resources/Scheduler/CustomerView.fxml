@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="454.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scheduler.CustController">
+   <children>
+      <TableView fx:id="custtable" layoutX="71.0" layoutY="102.0" prefHeight="251.0" prefWidth="617.0">
+        <columns>
+          <TableColumn fx:id="idcol" prefWidth="35.0" text="ID" />
+          <TableColumn fx:id="namecol" prefWidth="115.0" text="Name" />
+            <TableColumn fx:id="addcol" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="postcol" prefWidth="75.0" text="Postal Code" />
+            <TableColumn fx:id="phonecol" prefWidth="97.0" text="Phone Num" />
+            <TableColumn fx:id="countrycol" prefWidth="77.0" text="Country" />
+            <TableColumn fx:id="divcol" prefWidth="96.0" text="Division" />
+            <TableColumn fx:id="agecol" prefWidth="46.0" text="Age" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchtf" layoutX="425.0" layoutY="50.0" prefHeight="38.0" prefWidth="179.0" />
+      <Button fx:id="searchbutton" layoutX="354.0" layoutY="57.0" mnemonicParsing="false" onAction="#Search" text="Search" />
+      <Label fx:id="custtitle" layoutX="182.0" layoutY="50.0" prefHeight="38.0" prefWidth="172.0" text="Patients">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="addbutton" layoutX="94.0" layoutY="363.0" mnemonicParsing="false" onAction="#Create" text="Add Patient" />
+      <Button fx:id="updbutton" layoutX="268.0" layoutY="363.0" mnemonicParsing="false" onAction="#Update" text="Update Patient" />
+      <Button fx:id="deletebutton" layoutX="489.0" layoutY="363.0" mnemonicParsing="false" onAction="#Delete" text="Delete Patient" />
+      <Button fx:id="homebutton" layoutX="19.0" layoutY="14.0" mnemonicParsing="false" onAction="#Home" text="Home" />
+   </children>
+</AnchorPane>

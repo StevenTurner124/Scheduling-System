@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="551.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scheduler.AppointmentViewController">
+    <children>
+        <TableView fx:id="apptableview" layoutX="21.0" layoutY="139.0" prefHeight="220.0" prefWidth="748.0">
+            <columns>
+                <TableColumn fx:id="appidcol" prefWidth="95.0" text="ID de aplicación" />
+                <TableColumn fx:id="titlecol" prefWidth="43.0" text="Título" />
+                <TableColumn fx:id="desccol" prefWidth="74.0" text="Descripción" />
+                <TableColumn fx:id="locationcol" prefWidth="78.0" text="Localización" />
+                <TableColumn fx:id="contactcol" prefWidth="52.0" text="Doctor" />
+                <TableColumn fx:id="typecol" prefWidth="70.0" text="Tipo" />
+                <TableColumn fx:id="startcol" prefWidth="75.0" text="Iniciar" />
+                <TableColumn fx:id="endcol" text="Fin" />
+                <TableColumn fx:id="custidcol" prefWidth="108.0" text="Identificación del &#10;paciente" />
+                <TableColumn fx:id="useridcol" prefWidth="72.0" text="ID de &#10;usuario" />
+            </columns>
+        </TableView>
+        <RadioButton fx:id="allradio" layoutX="91.0" layoutY="106.0" mnemonicParsing="false" onAction="#ToggleView" text="Todo">
+            <toggleGroup>
+                <ToggleGroup fx:id="ToggleView" />
+            </toggleGroup></RadioButton>
+        <RadioButton fx:id="weekradio" layoutX="156.0" layoutY="106.0" mnemonicParsing="false" onAction="#ToggleView" text="Semana" toggleGroup="$ToggleView" />
+        <RadioButton fx:id="monthradio" layoutX="269.0" layoutY="106.0" mnemonicParsing="false" onAction="#ToggleView" text="Mes" />
+        <TextField fx:id="searchtf" layoutX="620.0" layoutY="94.0" />
+        <Button fx:id="searchbutton" layoutX="546.0" layoutY="94.0" mnemonicParsing="false" onAction="#onActionSearch" text="Buscar" />
+        <Button fx:id="createbutton" layoutX="46.0" layoutY="394.0" mnemonicParsing="false" onAction="#onActionCreate" text="Crear cita" />
+        <Button fx:id="updatebutton" layoutX="196.0" layoutY="394.0" mnemonicParsing="false" onAction="#onActionUpdate" text="Cita de actualización" />
+        <Button fx:id="deletebutton" layoutX="403.0" layoutY="394.0" mnemonicParsing="false" onAction="#onActionDelete" text="Eliminar cita" />
+        <Button fx:id="homebutton" layoutX="572.0" layoutY="394.0" mnemonicParsing="false" onAction="#Home" text="Inicio" />
+    </children>
+</AnchorPane>

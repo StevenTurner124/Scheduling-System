@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="518.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scheduler.CreateCustomer">
+    <children>
+        <Button fx:id="homebutton" layoutX="361.0" layoutY="420.0" mnemonicParsing="false" onAction="#Home" text="Inicio" />
+        <Label fx:id="namelabel" layoutX="45.0" layoutY="79.0" text="Nombre" />
+        <TextField fx:id="nametf" layoutX="94.0" layoutY="75.0" />
+        <Label fx:id="addlabel" layoutX="32.0" layoutY="120.0" text="Domicilio" />
+        <TextField fx:id="addtf" layoutX="94.0" layoutY="115.0" />
+        <Label fx:id="custidlabel" layoutX="20.0" layoutY="151.0" text="Identificación del &#10;paciente" />
+        <TextField fx:id="custidtf" editable="false" layoutX="94.0" layoutY="147.0" promptText="Generado automáticamente" />
+        <Label fx:id="dividlabel" layoutX="272.0" layoutY="151.0" text="ID de &#10;división" />
+        <TextField fx:id="dividtf" layoutX="343.0" layoutY="147.0" />
+        <Button fx:id="cancelbutton" layoutX="274.0" layoutY="420.0" mnemonicParsing="false" onAction="#Cancel" text="Cancelar" />
+        <Button fx:id="savebutton" layoutX="169.0" layoutY="420.0" mnemonicParsing="false" onAction="#Save" text="Salvar" />
+        <Label fx:id="phonelabel" layoutX="272.0" layoutY="79.0" text="Teléfono" />
+        <TextField fx:id="phonetf" layoutX="343.0" layoutY="75.0" />
+        <Label fx:id="postlabel" layoutX="262.0" layoutY="111.0" text="Código postal" />
+        <TextField fx:id="posttf" layoutX="343.0" layoutY="107.0" />
+        <Label fx:id="countrylabel" layoutX="32.0" layoutY="189.0" text="País" />
+        <ComboBox fx:id="countrycombo" layoutX="94.0" layoutY="185.0" onAction="#CountrySelect" prefWidth="150.0" />
+        <ComboBox fx:id="divcombo" layoutX="343.0" layoutY="185.0" prefWidth="150.0" />
+        <Label fx:id="divlabel" layoutX="272.0" layoutY="189.0" text="División" />
+        <TextField fx:id="agetf" layoutX="94.0" layoutY="220.0" />
+        <Label fx:id="agelabel" layoutX="32.0" layoutY="220.0" text="Edad" />
+        <Label fx:id="viplabel" layoutX="272.0" layoutY="220.0" text="VIP" />
+        <ComboBox fx:id="vipcombo" layoutX="343.0" layoutY="220.0" prefWidth="150.0" />
+    </children>
+</AnchorPane>

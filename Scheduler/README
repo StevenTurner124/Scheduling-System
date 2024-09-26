@@ -1,0 +1,18 @@
+Title: OnTime
+
+Purpose:A fully functional scheduling system capable of language translation based on localization, time zone conversion to fit business operation needs and alert needs of appointments upon log in.
+
+
+Author: Steven Turner, stur305@wgu.edu, version 1.05, 12/19/2023
+
+IDE Version: Intellij IDEA 2022.3.2
+SDK/JDK Version:JAVA SE 17.0.1/JavaFX-SDK-17.0.1
+Instructions:
+If needing to configure utilize exec:java -Dexec.mainClass=Scheduler.Main as the run command in the Maven command line and the working directory of where the file is stored on your system example for mine it was ~\Downloads\Scheduler\Scheduler\Scheduler\Scheduler.
+Utilize the above version for Java. Build the file and then run the application. From here you will be prompted for a username and password on the log in screen.
+The username and password are admin and password1!. Upon log in you will be brought to the home screen. Here you will find the ability to go to three options. The first being Patients, second being Reports and third being Appointments.
+Navigate as needed, if needing to return to the home screen find the applicable button and it will return you to the three options main menu.
+
+
+
+MYSQL Driver:mysql-connector-java-8.0.25
